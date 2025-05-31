@@ -10,10 +10,12 @@ const Navbar = () => {
     <>
     <nav className='bg-transparent fixed top-0 left-0 z-50 w-full backdrop-blur-sm flex justify-between items-center p-4'>
         <div className="text-white">
-            <Link to="/"><h1 className='text-4xl font-bold'> HikeBud</h1></Link>
+            <Link to="/">
+              <h1 className='text-4xl '>HikeBud</h1>
+            </Link>
         </div>
 
-        <div className="hidden md:flex md:flex-row gap-10 text-white">
+        <div className="logofont hidden md:flex md:flex-row gap-10 text-white">
             <ul className="flex text-xl md:text-2xl gap-8">
               <Link to="/Documentation"><li className="hover:underline cursor-pointer">Documentation</li></Link>
               <Link to="/Gallery"><li className="hover:underline cursor-pointer">Gallery</li></Link>

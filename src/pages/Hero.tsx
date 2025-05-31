@@ -1,4 +1,5 @@
 import Video from "../assets/RoundPokhara.mp4";
+import Typer from "../components/Typer";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-20 px-4">
         <h1 className="text-2xl sm:text-4xl font-bold mb-2">AI Powered</h1>
         <h2 className="text-3xl sm:text-5xl font-semibold mb-6 text-center">
-          Your Lifetime Experience
+          <Typer/>
         </h2>
         <form className="flex flex-col sm:flex-row gap-4 bg-white/15 p-4 rounded-xl backdrop-blur-md">
           <input
