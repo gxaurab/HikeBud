@@ -2,14 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap');
 @import "tailwindcss";
 
-      
-/* .logofont {   THIS IS DIRECT DECLARATION ANOHTER IS USING CSS VARIABLE
-  font-family: "Libre Baskerville", sans-serif;
-} */
 
 @theme {
   --font-logo: "Libre Baskerville", sans-serif;
-  
+
 }
 
 .logofont{
@@ -25,15 +21,14 @@
   }
 }
 
+@keyframes cards{
+
+}
+
+
 @layer utilities {
   .animate-marquee {
     animation: marquee 50s linear infinite ;
   }
 }
-
-/* @theme{ custom fonts here
-    --font-display: "Ancizar Sans", sans-serif;
-} */
-
-/* create custom animation keyframes and custom utlity functions too */
 

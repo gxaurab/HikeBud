@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "utils/button.tsx"]
+  "include": ["src", "src/components/button.tsx", "utils/Typer.tsx"]
 }

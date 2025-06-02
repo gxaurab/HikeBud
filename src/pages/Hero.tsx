@@ -1,20 +1,15 @@
 import Video from "../assets/RoundPokhara.mp4";
-import Typer from "../components/Typer";
+import Typer from "../../utils/Typer";
+import { useNavigate } from "react-router-dom";
+
 
 const Hero = () => {
-    const partners = [
-    "🏔️ Trek Adventures",
-    "🎒 Mountain Gear Co",
-    "🧭 Trail Blazers",
-    "⛰️ Summit Sports",
-    "🥾 Hike Pro",
-    "🏕️ Camp Elite",
-    "📍 Adventure Maps",
-    "🌟 Peak Experiences",
-    "🚁 Sky Tours",
-    "🏞️ Nature Escapes",
-  ];
-
+  
+  const navigate = useNavigate()
+  const handleSubmit=(e:React.FormEvent)=>{
+    e.preventDefault()
+    navigate('/code')
+  }
 
   return (
     <div className="relative w-full h-[90vh] overflow-hidden">
@@ -28,7 +23,8 @@ const Hero = () => {
         <h2 className="text-3xl sm:text-5xl font-semibold mb-6 text-center">
           <Typer/>
         </h2>
-        <form className="flex flex-col sm:flex-row gap-4 bg-white/15 p-4 rounded-xl backdrop-blur-md hover:scale-125 duration-300 ease-in ">
+        <form className="flex flex-col sm:flex-row gap-4 bg-white/15 p-4 rounded-xl backdrop-blur-md hover:scale-115 duration-300 ease-in "
+        onSubmit={handleSubmit}>
           <input
             type="number"
             placeholder="Budget $"
@@ -41,8 +37,7 @@ const Hero = () => {
           />
           <button
             type="submit"
-            className="bg-amber-300 text-black px-6 py-2 rounded-md font-semibold hover:bg-amber-400 transition"
-          >
+            className="bg-amber-300 text-black px-6 py-2 rounded-md font-semibold hover:bg-amber-400 transition">
             Find
           </button>
         </form>

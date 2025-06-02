@@ -1,6 +1,10 @@
 
 export const Code = () => {
   return (
-    <div>Code</div>
+    <div className=" min-h-screen">
+      
+      <h1> We need more details of yours to get you a best hiking route</h1>
+
+    </div>
   )
 }
