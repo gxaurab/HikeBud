@@ -9,7 +9,7 @@ export const hikeDetails: Hike[] = [
     difficulty: "Moderate",
     price: 300,
     attractions: ["hiking-trail","mountains","sherpa-culture"],
-    image: "../public/cardsImages/hikerAnnapurna.webp",
+    image: "hikerAnnapurna.webp",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const hikeDetails: Hike[] = [
     difficulty: "Easy",
     price: 250,
     attractions: ["hiking-trail","mountains","sherpa-culture"],
-    image: "../public/cardsImages/mardi.jpg",
+    image: "/mardi.jpg",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const hikeDetails: Hike[] = [
     difficulty: "Moderate",
     price: 200,
     attractions: ["hiking-trail","mountains","sherpa-culture"],
-    image: "../public/cardsImages/phoksundo.webp",
+    image: "/phoksundo.webp",
   },
     {
     id: 3,
@@ -36,6 +36,6 @@ export const hikeDetails: Hike[] = [
     difficulty: "Moderate",
     price: 200,
     attractions: ["hiking-trail","mountains","sherpa-culture"],
-    image: "../public/cardsImages/phoksundo.webp",
+    image: "/phoksundo.webp",
   }
 ];

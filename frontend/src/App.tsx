@@ -7,6 +7,8 @@ import Navbar from "./components/navbar"
 import Marquee from "./components/marquee"
 import PopularHike from "./pages/popularHike"
 import NotFound from "./pages/NotFound"
+import Footer from "./components/Footer"
+import Reviews from "./pages/Reviews"
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Hero/>
             <Marquee/> 
             <PopularHike/>
+            <Reviews/>
           </>
         }/>
         <Route path="/documentation" element={<Documentation/>}/>
@@ -25,6 +28,7 @@ function App() {
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="*" element={<NotFound/>} />
       </Routes>
+      <Footer/>
     </>
   )
 }

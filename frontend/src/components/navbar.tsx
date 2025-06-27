@@ -1,9 +1,9 @@
 import { useState } from "react"
-import menuIcon from "../../public/burger-menu-svgrepo-com.svg"
+import menuIcon from "/burger-menu-svgrepo-com.svg"
 import Button from "./button"
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
-
+import { motion } from "framer-motion";
 
 const Navbar = () => {
 
@@ -33,7 +33,9 @@ const Navbar = () => {
         <div className="flex md:hidden items-center gap-4 ">
           <Button color=" text-white" textSize="text-2xl" bg='bg-blue-600' content="Contact"/>
           <button onClick={() => setMenu(!menu)}>
-            <img className="h-7 w-7 bg-blue-400 rounded-sm" src={menuIcon} alt="Menu" />
+            <motion.img 
+              animate={{ rotate: 360, transition: {duration:2} }}
+              className="h-7 bg-amber-100/70 w-7 rounded-sm" src={menuIcon} alt="Menu" />
           </button>
         </div>
     </nav>

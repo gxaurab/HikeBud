@@ -1,0 +1,85 @@
+<svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background mountains silhouette -->
+  <path d="M0 50 L15 35 L30 45 L50 25 L70 40 L85 30 L100 45 L120 35 L140 50 L300 50 L300 80 L0 80 Z" 
+        fill="#2D5016" opacity="0.3"/>
+  
+  <!-- H -->
+  <g fill="#2D5016">
+    <rect x="20" y="15" width="4" height="35"/>
+    <rect x="20" y="30" width="15" height="4"/>
+    <rect x="31" y="15" width="4" height="35"/>
+  </g>
+  
+  <!-- I with sun dot -->
+  <g>
+    <!-- I stem -->
+    <rect x="45" y="25" width="4" height="25" fill="#2D5016"/>
+    
+    <!-- Sun as the dot of I -->
+    <g transform="translate(47, 15)">
+      <!-- Sun rays -->
+      <g stroke="#FF6B35" stroke-width="1.5" stroke-linecap="round">
+        <line x1="0" y1="-8" x2="0" y2="-10"/>
+        <line x1="5.7" y1="-5.7" x2="7.1" y2="-7.1"/>
+        <line x1="8" y1="0" x2="10" y2="0"/>
+        <line x1="5.7" y1="5.7" x2="7.1" y2="7.1"/>
+        <line x1="0" y1="8" x2="0" y2="10"/>
+        <line x1="-5.7" y1="5.7" x2="-7.1" y2="7.1"/>
+        <line x1="-8" y1="0" x2="-10" y2="0"/>
+        <line x1="-5.7" y1="-5.7" x2="-7.1" y2="-7.1"/>
+      </g>
+      <!-- Sun circle -->
+      <circle cx="0" cy="0" r="5" fill="#FF6B35"/>
+    </g>
+  </g>
+  
+  <!-- K -->
+  <g fill="#2D5016">
+    <rect x="60" y="15" width="4" height="35"/>
+    <rect x="64" y="30" width="2" height="4"/>
+    <path d="M66 28 L74 15 L78 15 L70 28 L78 50 L74 50 Z"/>
+  </g>
+  
+  <!-- E -->
+  <g fill="#2D5016">
+    <rect x="85" y="15" width="4" height="35"/>
+    <rect x="85" y="15" width="15" height="4"/>
+    <rect x="85" y="30" width="12" height="4"/>
+    <rect x="85" y="46" width="15" height="4"/>
+  </g>
+  
+  <!-- B -->
+  <g fill="#52B788">
+    <rect x="110" y="15" width="4" height="35"/>
+    <path d="M114 15 L125 15 Q130 15 130 20 Q130 25 125 25 L114 25 Z"/>
+    <path d="M114 25 L127 25 Q132 25 132 30 Q132 35 127 35 L114 35 Z"/>
+    <rect x="114" y="35" width="13" height="4"/>
+    <path d="M114 39 L127 39 Q132 39 132 44 Q132 50 127 50 L114 50 Z"/>
+  </g>
+  
+  <!-- U -->
+  <g fill="#52B788">
+    <rect x="140" y="15" width="4" height="25"/>
+    <rect x="140" y="40" width="15" height="4"/>
+    <path d="M140 44 Q140 50 147.5 50 Q155 50 155 44"/>
+    <rect x="151" y="15" width="4" height="25"/>
+  </g>
+  
+  <!-- D -->
+  <g fill="#52B788">
+    <rect x="165" y="15" width="4" height="35"/>
+    <path d="M169 15 L175 15 Q185 15 185 32.5 Q185 50 175 50 L169 50 Z"/>
+  </g>
+  
+  <!-- Small hiking trail path -->
+  <path d="M200 35 Q210 30 220 35 Q230 40 240 35 Q250 30 260 35" 
+        stroke="#8D6E63" stroke-width="2" fill="none" stroke-dasharray="3,2"/>
+  
+  <!-- Small mountain peak accent -->
+  <path d="M270 25 L275 15 L280 25 Z" fill="#52B788" opacity="0.7"/>
+  
+  <!-- Tagline -->
+  <text x="20" y="65" font-family="Arial, sans-serif" font-size="10" fill="#666" font-weight="300">
+    Your Adventure Companion
+  </text>
+</svg>
