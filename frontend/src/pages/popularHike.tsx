@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 
 const PopularHike = () => {
   return (
-    <section className="py-9 bg-gradient-to-b from-amber-50 to-white">
+    <section className="py-9 bg-lime-50">
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-center text-4xl font-bold text-gray-800 mb-8"
+        viewport={{once:true}}
+        className="text-center text-4xl font-medium text-gray-800 mb-8"
       >
         Trending Hiking Destinations
       </motion.h1>
@@ -20,6 +21,7 @@ const PopularHike = () => {
           justify-start lg:justify-center
           gap-6
           overflow-x-auto
+          overflow-y-hidden 
           snap-x snap-mandatory
           scrollbar-hide
           px-4 pb-4
@@ -32,6 +34,7 @@ const PopularHike = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: index * 0.1 }}
+            viewport={{once:true}}
           >
             <HikeCards {...hike} />
           </motion.div>

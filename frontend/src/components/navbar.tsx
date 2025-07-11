@@ -27,14 +27,14 @@ const Navbar = () => {
               <Link to="/Gallery"><li className="hover:text-blue-400 cursor-pointer">Gallery</li></Link>
               <Link to="/Code"><li className="hover:text-blue-400 cursor-pointer">Code</li></Link>
             </ul>
-          <Button color="logofont text-white" textSize="text-2xl" bg='bg-blue-600' content="Contact"/>
+          <Link to="/contact"><Button color="logofont text-white" textSize="text-2xl" bg='bg-blue-600' content="Contact"/></Link>
         </div>
 
         <div className="flex md:hidden items-center gap-4 ">
           <Button color=" text-white" textSize="text-2xl" bg='bg-blue-600' content="Contact"/>
           <button onClick={() => setMenu(!menu)}>
             <motion.img 
-              animate={{ rotate: 360, transition: {duration:2} }}
+              animate={{ rotate: 180, transition: {duration:2} }}
               className="h-7 bg-amber-100/70 w-7 rounded-sm" src={menuIcon} alt="Menu" />
           </button>
         </div>

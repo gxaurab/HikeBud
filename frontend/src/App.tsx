@@ -9,6 +9,9 @@ import PopularHike from "./pages/popularHike"
 import NotFound from "./pages/NotFound"
 import Footer from "./components/Footer"
 import Reviews from "./pages/Reviews"
+import ContactPage from "./pages/ContactPage"
+import Contact from "./pages/Contact"
+
 
 function App() {
   return (
@@ -21,11 +24,13 @@ function App() {
             <Marquee/> 
             <PopularHike/>
             <Reviews/>
+            <ContactPage/>
           </>
         }/>
         <Route path="/documentation" element={<Documentation/>}/>
         <Route path="/code" element={<Code/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/contact" element= {<Contact/>}/>
         <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>

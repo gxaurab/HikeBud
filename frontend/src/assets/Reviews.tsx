@@ -40,6 +40,6 @@ export const reviews: Review[] = [
     date: "2025-06-01",
         location: "Langtang Trek",
     description: "Impressed with the smooth UI. Everything from finding routes to safety tips is here!",
-    image: "/public/image2.jpg",
+    image: "/image2.jpg",
   },
 ];

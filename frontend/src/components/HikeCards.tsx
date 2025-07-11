@@ -5,7 +5,7 @@ const HikeCards = ({ title, location, difficulty, attractions, price,image}:Hike
     <section 
     className="
     bg-white 
-    shadow-2xl 
+    shadow-xl 
     rounded-2xl 
     p-2 h-auto 
     hover:transition-transform hover:scale-105 

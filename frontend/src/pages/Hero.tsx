@@ -2,15 +2,21 @@ import Video from "../assets/RoundPokhara.mp4";
 import Typer from "../../utils/Typer";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import { useEffect,useRef } from "react";
 
 const Hero = () => {
   const navigate = useNavigate()
+  const ref = useRef<HTMLInputElement>(null)
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     navigate('/code')
   }
+
+  useEffect(() => {
+    ref.current?.focus()
+  }, []);
+
 
   return (
     <div className="relative w-full h-[90vh] overflow-hidden">
@@ -33,6 +39,7 @@ const Hero = () => {
           <input
             type="number"
             placeholder="Budget $"
+            ref={ref}
             className="px-4 py-2 rounded-md text-white w-40"
           />
           <input
@@ -67,7 +74,7 @@ const Hero = () => {
               </div>
             </div>
             <div>
-                <h1 className="text-red-400 text-[12px] text-center">Video Reference: Pokhara, Nepal</h1>
+                <h1 className="text-white text-[12px] text-center">Video Location: Pokhara, Nepal</h1>
             </div>
             <div className="bg-black/30 backdrop-blur-sm rounded-lg p-3 text-center">
               <p className="text-white text-xs">
@@ -91,7 +98,7 @@ const Hero = () => {
             </div>
             
             <div>
-                <h1 className="text-red-400 text-[12px]">Video Reference: Pokhara, Nepal</h1>
+                <h1 className="text-amber-400 text-[13px]">Video location: Pokhara, Nepal</h1>
             </div>
 
             <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 max-w-xs">
